@@ -1,0 +1,62 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    background-color:#faf0e6;
+    padding: 20px;
+}
+section{
+  padding: 10px;
+}
+.box{
+background-color: #808080;
+height: 100px;
+line-height: 100px;
+text-align: center;
+}
+.logo{
+    text-align:left;
+}
+p{
+    margin-left: 20px;
+}
+span{
+    float: right;
+    margin-right: 40px;
+}
+.A{
+    height: 200px;
+    line-height: 200px;
+    margin-bottom: 0;
+}
+.B{
+    height: 150px;
+    line-height: 150px;
+    margin-bottom: 0
+}
+.C, .D{
+    height: 400px;
+    line-height: 400px;
+}
+.E{
+    height: 50px;
+    line-height: 50px;
+}
+
+[class*='col-']{
+    float: left;
+    padding: 0 20px;
+}
+.grid::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 425px){
+    [class*='col-']{
+        width: 100%;
+    }
+}
